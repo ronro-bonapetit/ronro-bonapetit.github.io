@@ -16967,6 +16967,19 @@ __webpack_require__.r(__webpack_exports__);
 // スタイルシートを読み込む
 
 
+window.onload = Judge
+window.onresize = Judge
+
+function Judge(){
+	let target = document.getElementById("Judge");
+	if (window.innerWidth < (window.innerHeight - 130)* 0.61) {
+		target.classList.add("active");
+	}
+	else {
+		target.classList.remove("active");
+	}
+}
+
 /***/ }),
 
 /***/ "./src/index.scss.js":
