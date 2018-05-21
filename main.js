@@ -16972,7 +16972,7 @@ window.onresize = Judge
 
 function Judge(){
 	let target = document.getElementById("Judge");
-	if (window.innerWidth < (window.innerHeight - 130)* 0.61) {
+	if (window.innerWidth * 1.63 > window.innerHeight - 85) {
 		target.classList.add("active");
 	}
 	else {
